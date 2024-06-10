@@ -146,6 +146,30 @@ executable static
     buildable: False
   GHC-Options: -threaded
 
+executable example-rearrange-functions
+  import: warnings
+  hs-source-dirs: examples
+  main-is: RearrangeFunctions.hs
+  build-depends:
+                base
+              , containers
+              , ghc
+              , ghc-exactprint
+              , ghc-paths
+  default-language: Haskell2010
+
+executable example-insert-signature
+  import: warnings
+  hs-source-dirs: examples
+  main-is: InsertSignature.hs
+  build-depends:
+                base
+              , containers
+              , ghc
+              , ghc-exactprint
+              , ghc-paths
+  default-language: Haskell2010
+
 -- executable prepare-hackage
 --   import: warnings
 --   main-is: PrepareHackage.hs
